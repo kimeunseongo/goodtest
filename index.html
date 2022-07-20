@@ -1,0 +1,3819 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>인터파크</title>
+
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+	<script src="js/menu.js"></script>
+
+	<script src="js/slider.js"></script>
+
+	<script src="js/minibook.js"></script>
+
+	<script src="js/section1slide.js"></script>
+
+	<script src="js/rankingbox.js"></script>
+
+	<script src="js/trend.js"></script>
+
+	<script src="js/trend_ajax.js"></script>
+
+
+	<script src="js/leftside.js"></script>
+
+	<script src="js/choiceHover.js"></script>
+
+	<script src="js/choice_btn.js"></script>
+
+
+	<script src="js/choice_con.js"></script>
+
+	<script src="js/choiceline_json.js"></script>
+
+
+	<script src="js/howbookslide.js"></script>
+
+	<script src="js/howbook_ajax.js"></script>
+
+
+
+	<script src="js/recommend_4.js"></script>
+
+	<script src="js/exclick.js"></script>
+
+	<script src="js/field_ajax.js"></script>
+
+
+	<script src="js/month.js"></script>
+
+	<script src="js/attention_json.js"></script>
+	<script src="js/attention_json2.js"></script>
+
+	<script src="js/sale.js"></script>
+
+	<script src="js/sale_ajax.js"></script>
+
+
+	<script src="js/cd.js"></script>
+
+
+	<script src="js/cdjson.js"></script>
+
+	<script src="js/dvd.js"></script>
+	<script src="js/dvdjson.js"></script>
+
+
+	<script src="js/ebook.js"></script>
+	<script src="js/ebookjson.js"></script>
+
+
+
+
+
+
+
+
+
+	<style>
+
+		*{margin: 0; padding: 0; box-sizing: border-box;}
+
+		* { box-sizing: border-box;}
+
+		ul,li,ol{list-style: none;}
+
+
+/*헤더 시작*/
+
+header{ width: 100%; height: 180px; }
+
+
+/*맨위 메뉴 홈과 로그인 메뉴들*/
+
+#headfull{width: 100%; height: 35px; display: flex; justify-content: center; border-bottom:1px solid #c1c1c1;}
+
+#midhfull{width: 1140px; height: 35px; display: flex; justify-content: space-between;}
+
+.topmenu{display: flex;justify-content: flex-start;  }
+
+.topmenu li{float: left;   font-size: 13px; padding: 10px;}
+
+.mid1{color: #777777; border-right:1px solid #c1c1c1 ; }
+.mid2{color: #ea4b4b; border-right:1px solid #c1c1c1 ;}
+.mid3{color: #777777; border-right:1px solid #c1c1c1 ;}
+.mid4{color: #777777; border-right:1px solid #c1c1c1 ;}
+.mid5{color: #c1c1c1; border-right:1px solid #c1c1c1 ;}
+
+.topmenu2{display: flex; justify-content: flex-end; align-items: center;}
+
+.topmenu2 li{float: left;   font-size: 11px; color: #666666; padding: 10px auto;}
+
+.topmenu2 li span{color: #c10001; font-weight: bold;}
+
+
+
+/*도서 인터파크 로고와 검색창 과 도서추천*/
+
+
+#headmid{ width: 1140px; height: 100px;  margin: 0px auto; display: flex;  justify-content: space-between;  align-items: center;}
+
+/*로고*/
+
+#logo{width: 201px; height: 100px;  display: flex; align-items: center;}
+
+
+/*검색창*/
+
+#searchmid{width: 425px ; height: 100px; display: flex; flex-wrap: wrap; justify-content: center;
+	align-content:center ; position: relative; }
+
+	#search{width: 425px; height: 30px;     display: flex; justify-content: flex-start;
+		align-items: center;  border-bottom:2px solid #ef544d ; margin: 20px 0 0 0px;}
+
+		#search input{width: 380px; height: 10px; border: none; padding: 10px 10px; font-weight: bold; border-radius: 5px; }
+
+		.search_btn{position: absolute; top: 36px; right:5px;}
+		.search_btn:hover{cursor: pointer;}
+
+/*검색창 밑 자주검색 되는것*/
+
+#search2{width: 425px; height: 30px;}
+
+.search_under{width: 415px; height: 20px ;  margin: 5px 0 0 0px;}
+
+.search_under li{float: left; text-decoration: none;color:#00adef; font-size: 11px;   }
+.search_under li a { text-decoration: none; color:#00adef; font-size: 11px; }
+
+
+/*오른쪽 미니책 광고*/
+
+#top_ad{width: 184px; height: 100px;  display: flex; align-items: center; justify-content: center;}
+
+
+/*전체 카테고리류 메뉴*/
+
+
+
+
+.navwrap {width:100%; height:46px; background-color:#f75850; position: relative;}
+
+nav {width:1140px; height:44px; margin:0 auto; font-size:15px; position: relative; background-color: #f75850; top:2px;}
+
+#nc{height: 43px;}
+
+nav > ul {width:100%; display: flex; justify-content: space-between; align-items: center;}
+
+nav > ul > li{float:left; line-height:42px; color:#fff; width:6%; height:100%; text-align: center; font-weight: bold; height:43px; cursor: pointer;  background-color: #f75850;}
+
+nav > ul > li > a {color:#fff; text-decoration: none;}
+
+nav > ul > li:nth-of-type(1) {width:16%; background-color:#d73c35; height:45px; display: flex; align-items: center; justify-content: space-between; padding:0 30px;}
+
+nav > ul > li:first-child:hover {color:#fff1a2; background-color: #850000;}
+
+#up1 {display:none;}
+
+nav > ul > li:nth-of-type(1)~li:hover a{color:#fff1a2;}
+
+nav > ul > li:nth-of-type(6) {border-right: 1px solid #cb4742; width:4%; height:15px;}
+
+nav > ul > li:nth-of-type(6)~li a{color:#fff1a2;}
+
+nav > ul > li:nth-of-type(6)~li a:hover {color:yellow}
+
+nav > ul > li:last-of-type {background-image: url(img/bg_headerBookdb4.png); background-size:cover; background-position: center; width:4%;}
+
+
+/*전체 카테고리 클릭시 나오는 슬라이더*/
+
+.navslide {position: absolute; z-index: 4; width:100%; height:735px; background-color: #fff; border-left: 2px solid #d74b45; border-right:2px solid #d74b45; border-bottom: 2px solid #d74b45; display: none;}
+
+.navslide > ul {width:100%; height:95%; border-bottom:1px solid #33353d; display: flex; flex-wrap: wrap; letter-spacing: -1px;position: relative;}
+
+.navslide > span {float:right; margin:5px 15px; font-size:20px; color:#666; cursor: pointer; }
+
+.navslide > ul > li {padding:20px 22px; color: #666; font-weight: bold; font-size:14px;}
+
+.navslide > ul > li > span:hover {cursor: pointer; text-decoration: underline;}
+
+.scolor {color:#f68257;}
+
+.navslide > ul > li > ul > li {width:85%; display: flex; justify-content: space-between;}
+
+.navslide > ul > li > ul {margin:10px 0 0 0;}
+
+.navslide > ul > li > ul > li > span {font-weight: normal; width:85px; line-height:160%; font-size:12px;}
+.navslide > ul > li > ul > li > span:hover {cursor: pointer; text-decoration: underline}
+
+.navslide > ul > li:first-child {width:360px; border-right: 1px solid #e5e5e5; padding:20px 45px; }
+
+.navslide > ul > li > img {position: absolute; top:420px; left:40px; cursor: pointer;}
+
+.navslide > ul > li:nth-child(2){height:100%; width: 175px; border-right: 1px solid #e5e5e5}
+
+.navslide > ul > li:nth-child(3){height:100%; width: 175px; border-right: 1px solid #e5e5e5}
+
+.navslide > ul > li:nth-child(4){height:100%; width: 165px; border-right: 1px solid #e5e5e5}
+
+.navslide > ul > li:nth-child(5){height:260px; width:261px;}
+
+.navslide > ul > li:nth-child(6){height:175px; width:261px; position: absolute; right: 0; top:260px; border-top: 1px solid #e5e5e5}
+
+.navslide > ul > li:nth-child(7){height:260px; width:261px; position: absolute; right:0; top: 435px; border-top: 1px solid #e5e5e5}
+
+
+
+.navslide > ul > li:nth-child(7) > img  {position: absolute; top:130px; left:20px; z-index: 6}
+
+
+
+
+/*슬라이더시작*/
+
+#dotslider{ width: 100%; height:315px; display: flex; flex-wrap: wrap; justify-content: center; background-color: #74e2dc; position: relative; }
+
+#slider{width: 910px; height: 316px;  display: flex;justify-content: center;  position: relative; }
+
+
+/*슬라이더 왼쪽에있는 미니북*/
+
+
+
+#leftadv{ background-color: red; position: relative;}
+
+#slideradv{width: 53px; height: 77px; position: absolute; top: 50px; left: -115px; cursor: pointer;}
+
+#advmouse{ position: absolute;  top: 130px; left: -115px; cursor: pointer; }
+
+#miniadv{ position: absolute;  top: 191px; left: -145px; cursor: pointer; }
+
+#slideradv2{position:absolute; top: 0; left: 0; display: none; width: 1260px; height: 371px;}
+
+#advmini{width: 1140px; height: 371px;}
+
+
+.advbtn1{position:absolute; top: 330px; right: 207px; cursor: pointer;}
+
+.advbtn2{position:absolute; top: 330px; right: 140px; cursor: pointer;}
+
+
+
+
+.slide {width: 910px;height: 316px; position: relative; display: flex;justify-content: center;   }
+
+
+.slide > li {width: 910px; height: 316px; position: absolute; }
+
+
+
+.slide > li > img { width: 910px; height: 315px; margin: 0px auto; overflow: hidden;}
+
+
+
+.slide li:not(:first-child) {display: none;}
+
+
+/*슬라이더 밑 메뉴부분*/
+
+#sbanner{width:100%;height:55px ; background-color: #f7f7f7; display: flex; justify-content: center; align-items: center; }
+
+.sbannerbox{ width: 1140px;}
+
+.sbannerbox li{float: left;  width: 182px; height: 55px;  display: flex; justify-content: center; align-items: center; }
+
+.sbannerbox li:hover{border-top:1px solid yellow ; cursor: pointer;}
+
+/*베스트 셀러부분*/
+
+.bestseller{width:230px ;height:315px ; background-color: rgba(1,1,1,0.4); display: flex; flex-wrap: wrap; align-content: flex-start; }
+
+.best{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center;    
+	border: 1px solid #626262;
+
+
+	color: #fff1a2;
+	font-weight: bold;
+	font-size: 15px;}
+
+	.bestmenu{width: 100%; display: flex; }
+
+	.today{font-size: 12px; width: 50%; height: 30px;  display: flex; justify-content: center; align-items: center; border-top: 1px solid #b3b3b3; border-right: 1px solid #b3b3b3;cursor: pointer; color: #fff;}
+
+	.week{font-size: 12px; width: 50%; height: 30px; display: flex; justify-content: center; align-items: center; border-top: 1px solid #b3b3b3; border-bottom: 1px solid #888; cursor: pointer;color: #fff;}
+
+
+
+	.rankingbox1{width: 100%; height: 215px; display: flex; flex-wrap: wrap;
+		border-bottom: 1px solid #b3b3b3;}
+
+
+		.rankingbox2{width: 100%; height: 215px; display: flex; flex-wrap: wrap;
+			border-bottom: 1px solid #b3b3b3;  }
+
+
+
+			.rank1{display: flex; flex-wrap: wrap;  font-size: 12px; color: #fff; padding: 3px 0px 0px 0px; width: 100% ; height: 23px;}
+
+			.rank1>span{margin: 0 10px 0 10px;}
+
+			.rank1>h5{color: red; margin: 3px 5px 0px 0px; font-size: 2px; }
+
+			.rank2{display: flex; flex-wrap: wrap;  font-size: 12px; color: #fff; padding: 3px 0px 0px 0px; width: 100% ; height: 23px;}
+
+			.rank2>span{margin: 0 10px 0 10px;}
+
+			.rank2>h5{color: red; margin: 3px 5px 0px 0px; font-size: 2px; }
+
+
+
+			.fa-minus{color: gray; margin: 3px 10px 0px 0px;}
+
+			.fa-caret-down {color: #2083e0; font-size: 14px; margin: 3px 10px 0px 0px;}
+
+			.fa-caret-up{color: red; margin: 3px 10px 0px 0px;}
+
+
+
+
+
+			#reco{width: 25%; height: 35px; color: #fff1a2;
+				text-align: center;
+
+				line-height: 35px;
+				background-color: rgba(0.4,0.4,0.4,0.4);
+
+				font-weight: bold;}
+
+				#reco2{width: 75%; height: 35px;  text-align: center; line-height: 35px; font-size: 12px; color: #fff;}
+
+
+
+
+
+
+/*섹션시작*/
+
+#fullsection{width: 100%; height: 2600px; margin: 0px auto;}
+
+#full_side{width: 1400px; height: 2600px;  margin: 0px auto;  position: relative;}/*원래1400*/
+
+/*섹션 사이드 왼쪽 그림들*/
+
+.sidewrap{width:92px; height: 200px; position: absolute; top: 0; left: 0px;  border:1px solid #e8e8e8 ; }
+.sidewrap>.side_img{width: 90px; height: 158px; display: flex;}
+
+.sidewrap>.side_img:hover{cursor: pointer;}
+
+.side_btn{width: 70px; height: auto; display: flex; justify-content: space-evenly;  margin:3px auto;}
+
+.side_btn>span{ font-size:10px;  padding:1px 2px; bottom:20px; color:#b5b5b5;  border:1px solid #d5d5d5; cursor: pointer; }
+
+.side_btn>span:hover{cursor: pointer;}
+
+#side_mini{position: absolute; top: 220px; left: 0;}
+
+#side_mini:hover{cursor: pointer;}
+
+
+/*섹션 시작*/
+
+section{ width: 1150px; height: 2600px;  margin: 50px auto; display: flex; justify-content: center; flex-wrap: wrap; align-content: flex-start; position: relative;}
+
+/*섹션1시작*/
+
+#section1{width: 1140px; height: 380px;   display: flex; justify-content: space-between; position: relative; }
+
+/*섹션1 헤더 인터파크 추천*/
+
+#rec_header{ position: absolute; top: -16px; right: 200px; z-index: 4;
+	width: 650px; display: flex;justify-content: space-between;  }
+
+/*섹션1 헤더 {인터파크 추천!}*/
+
+#rec_header h3{ width: 250px; color: black; font-size: 30px; background-color: #fff; font-weight: normal;  display: flex; justify-content: center; }
+
+#rec_header>h3> span{color: red;font-weight: normal;}
+
+#rec_header>h3>i{color: red;font-weight: normal;}
+
+/*섹션1 헤더 {더보기}*/
+
+#rec_header h5{margin: -5px 0 0px 0px; }
+
+#rec_header h5>span{ margin: 0 100px 0 5px; color: gray;}
+
+#rec_header h5:hover{cursor: pointer;}
+
+
+/*섹션1 슬라이드 시작*/
+
+#recommend{width: 849px; height: 370px; position: relative; overflow: hidden; border-top: 1px solid black; border-bottom: 1px solid #eee; z-index: 1; }
+
+/*섹션1 슬라이드버튼*/
+
+#recommend>  span { overflow: hidden;  display: block; font-size: 38px; color:#c9c9c9; line-height:20px; 
+	cursor: pointer; height: 50px; transform: translateY(-50%); }
+
+	#recommend> span:hover { color:red;}
+
+
+
+	.prev {left:0;padding:10px; position: absolute; top: 50%; left: 0;}
+
+	.next {right:0; padding:10px; position: absolute; top: 50%; right: 0;}
+
+
+
+
+/*섹션1 슬라이드 랩*/	
+
+#recoslidewrap{width: 3396px; height: 370px; }
+
+/*섹션1 슬라이드 리스트*/	
+
+.recosec{width: 849px; height: 300px; margin: 40px 0 0 0px;  float: left; black; display: flex; justify-content: center; align-items: center; }
+
+.rec_imgbox{ height: 300px; width: auto;  position: relative;}
+
+.rec_imgbox>img{margin: 10px 0 0 0px;}
+
+.rec_imgbox>.heartclip{position: absolute; top: -13px; left: 0px;}
+
+.recosec_mini{width: 310px; height: 200px;  display: flex; justify-content: center; align-items: center; }
+
+.recosecbox{width: 80%; height: auto; }
+
+.recosecbox>span{color: orange; line-height:32px;}
+
+.recosecbox>p{display: inline-block; font-size: 20px; font-family: tahoma; 
+	color: #ef544d;  line-height: 16px; margin: 10px 0 0px 8px;}
+
+	.recosecbox>h2{font-size: 16px;}
+
+	.recosecbox>h2:hover{cursor: pointer; text-decoration: underline;}
+
+	.recosecbox>h4{font-size: 14px;}
+
+	.recosecbox>h5{font-size: 12px; width: 100%; background-color:#f7f7f7 ;
+		font-weight: normal; margin: 10px 0 0 0px; line-height: 20px;}
+
+
+/*섹션1 트렌드 */
+
+#trend{width: 265px; height: 370px; background-color: #f7f7f7;   position: relative; border-top: 1px solid black; }
+
+#trend>span{position: absolute;left: 2px;top: -22px;font-size: 14px;
+	font-weight: bold; color: #555;}
+
+/*섹션1 트렌드  점점점점 클릭버튼*/
+
+.trenddot{display: flex; justify-content: center; margin: 10px 0px 0 0px;
+	position: absolute;left: 75px;top:10px;
+	z-index: 4; color: rgb(214,214,214);}
+
+	.trenddot>li{float: left; margin: 0px 3px;}
+
+
+
+	#tr_hidden>.trenddot>li:nth-child(1){color:#3fd0ff}
+
+	.trenddot>li:hover{cursor: pointer;}
+
+	/*섹션1 트렌드 이미지*/
+
+	.trendimg{width: 100%; height: 100%;  position: absolute; overflow: hidden; }
+
+	#trend_aj>li{width: 265px; height: 398px; float: left;}
+
+	#trend_aj>li{float: left; }
+
+	#trend_aj>li>div{width: 265px; height: 398px;  display:flex ; }
+
+	#trend_aj>li>div>img{width: 180px; height: 261px; margin: 60px auto; }
+
+
+
+
+
+
+
+/*섹션2시작*/
+
+#section2{width: 1140px; height: 400px;  display: flex; justify-content: space-between; }
+
+
+/*섹션2 출판사 초이스 !*/
+
+#choice{width: 411px; height: 400px; overflow: hidden;  }
+
+/*섹션2 출판사 초이스 헤더*/
+
+#choice_header{width: 100%; height: 30px; display: flex; justify-content: space-between; }
+
+#choice_header>h2{font-size: 20px;}
+
+#choice_header>h2>span{color: #ff483b;}
+
+/*섹션2 출판사 초이스 버튼과 숫자*/
+
+#c_header_btn { width: 100px; position: relative;}
+
+#c_header_btn > span {position: absolute; top: 5px; font-size:14px; border: 1px solid #c3c3c3; color:#777; padding:0 3px; line-height:16px; height:20px; cursor: pointer;}
+
+#c_header_btn > h5 {position: absolute; top:5px; right:60px; font-size:14px; font-weight: normal;}
+
+#c_header_btn > h5:not(:nth-of-type(1)) {display:none;}
+
+#c_header_btn > h5 > span {color:#f37973}
+
+#c_header_btn>#h52{display: none;}
+
+.choprev {right:28px;}
+
+.chonext {right:5px;}
+
+
+
+/*섹션2 출판사 초이스 메인*/
+
+
+.choice_main1{width: 411px; height: 218px;  border:1px solid #dcdcdc;   overflow: hidden;}
+
+.choice_main1>ul{width: 2000px; height: 218px; }
+
+/*섹션2 출판사 초이스 메인 콘텐츠*/
+
+.choice_contents{float: left;  }
+
+.main_1{width: 411px; height: 218px;  display: flex; align-items: center; justify-content: center; border-right: 1px solid #dcdcdc; border-left: 1px solid #dcdcdc;}
+
+
+/*섹션2 출판사 초이스 메인 콘텐츠 이미지박스*/
+
+.main_cimg{width:120px ; height: 180px;}
+
+
+/*섹션2 출판사 초이스 메인 콘텐츠 코멘트박스*/
+
+.main_ccoment{width: 250px; height: 180px;  display: flex; flex-wrap: wrap;}
+
+	.main_ccoment>p{color: orange;  font-size: 20px; margin: 30px 0 0 5px;}
+
+.main_ccoment>h3{color: #ef544d; font-size: 20px;  margin: 30px 0 0 5px;}
+
+.main_ccoment>h4{font-size: 13px;
+	width: 300px;color: #434343; margin: -20px 0 0 5px;}
+
+	.main_ccoment>h5{font-size: 11px; font-weight: normal; color: #757b89;margin: -20px 0 0 5px;}
+
+
+
+
+
+
+
+
+
+/*섹션2 출판사 초이스 밑 책들 박스*/
+
+
+.choice_bottom{width: 411px; height: 145px;
+	border-top: 1px solid #dcdcdc; }
+
+	.choice_bottom ul{width: 411px; height: 145px; display: flex; justify-content: space-evenly; border-right: 1px solid #dcdcdc; border-left: 1px solid #dcdcdc; border-bottom: 1px solid #dcdcdc;}
+
+	.choice_bottom>ul>li{float: left;}
+
+	.choice_bottom>ul>li>img{width: 65px; height: 95px;  margin: 20px auto}
+
+	.choice_bottom > ul > li:hover {border-top:2px solid #ff483b}
+
+	.choice_bottom > ul > li:hover::before {position: absolute; top:-7px; left:40%; content: " ";  border-bottom: 5px solid; border-left: 5px solid rgba(0, 0, 0, 0); border-right: 5px solid rgba(0, 0, 0, 0); color: #ff483b; transform: rotate(-360deg);}
+
+
+
+	
+
+
+/*섹션2 게으른 책읽기*/
+
+	#read{width: 411px; height: 400px;   }
+
+	#read_header{width: 100%; height: 30px; }
+
+	#read_header>h2{font-size: 20px;}
+
+	#read_header>h2>span{color: #ff483b;}
+
+	#read_video{width: 100%; height:254px ; border: 1px solid #dcdcdc;}
+
+	#read_comment{width: 100%; height:110px ;border-bottom: 1px solid #dcdcdc; border-right: 1px solid #dcdcdc; border-left: 1px solid #dcdcdc; display: flex; flex-wrap: wrap;}
+
+	.comment1{width:100% ; height: 50%;  display: flex ; justify-content: space-evenly; align-items: center;}
+
+	.comment1>i{cursor: pointer;  font-size:32px; color: #777;}
+
+	.comment1>h4{color: #777; font-size:13px; cursor: pointer;}
+
+	.comment1>span{color:#777; font-size:13px; font-weight: bold;}
+
+	.comment1:hover > span {cursor: pointer; text-decoration: underline;}
+
+/*섹션2 이책어때?*/
+
+	#how{width: 265px; height: 400px; }
+
+	#how_header{width: 100%; height: 30px; }
+
+	#how_header>h2{font-size: 20px;}
+
+	#how_header>h2>span{color: #ff483b;}
+
+
+	.howbookbox {width:265px; height:362px; display: flex; flex-wrap: wrap; justify-content: center; position: relative; align-content: center; border: 1px solid #dcdcdc; margin: 5px auto;}
+
+	.howulbox2 { background-color: sienna; width:150px; height:55px;  ; overflow: hidden ; position: absolute; top: 280px; left:180;}
+
+	.howulbox2 > ul {width:795px; height:55px; text-align: center; line-height: 180%;position: relative; }
+
+	.howulbox2 > ul p {font-size:12px; background-color: pink;}
+
+	.howulbox2 > ul span {font-size:13px; background-color: yellowgreen; }
+
+	.howulbox2:hover > ul span {text-decoration: underline; cursor: pointer; 
+		color:#666;}
+
+		.howulbox2 > ul li {width: 150px; float:left; margin:0 0 0 0px;}
+
+		.howbookbox >.howprev {position: absolute; top:150px; transform: translateY(-40%); 
+			font-size:20px; color: #c9c9c9; cursor: pointer;}
+
+			.howbookbox >.howprev:hover {color:#ef544d}
+
+			.howbookbox >.hownext {position: absolute; top:150px; transform: translateY(-40%); 
+				font-size:20px; color: #c9c9c9; cursor: pointer;}
+
+				.howbookbox >.hownext:hover {color:#ef544d}
+
+				.ebook{width: 173px; height: 235px; margin: 30px 0 0 41px; position: absolute; top: 0; left: 0; z-index: 4;}
+
+				.howprev { left:15px;}
+
+				.hownext {right:15px;}
+
+				.howbookimg {width:172.25px; height:235px; }
+
+				.howulbox {width:150px; height:210px; margin:-10px 0 30px 12px; overflow: hidden}
+
+
+
+				.howbookimg ul {width:450px; height:100%; position: relative;} 
+
+				.howbookimg ul li {width:150px; height:100%; float:left}
+
+				.howbookimg ul li img {width:100%; height:100%; cursor: pointer;}
+
+
+/*섹션3시작*/
+
+#section3{width: 1140px; height: 150px;  overflow: hidden; }
+
+#section3  a img{width: 100%; height: 110%;}
+
+
+
+/*섹션4시작*/
+
+
+
+#section4{width: 1140px; height: 517px;  margin: 50px 0 0 0px;  border-top:1px solid black ;}
+
+
+/*섹션4 메뉴들*/
+
+#recmenu{width: 1140px; height: 45px; margin: 30px auto; position: relative; border-bottom: 1px solid #c9c9c9;}
+
+/*섹션4 메뉴 헤더 분야별 추천*/
+
+#recmenu_header{ position: absolute; top:-50px; left: 400px; z-index: 4;
+	width: 300px; height: 50px; }
+
+	#recmenu_header h3{ width: 300px; color: black; font-size: 30px; background-color: #fff; text-align: center; font-weight: normal; }
+
+	#recmenu_header>h3> span{color: red;font-weight: normal; }
+
+
+	.recmenu_m{width: 145px ; height: 45px;  float: left; margin: 0 0 0 15px; display: flex; justify-content: center; align-items: center;}
+
+	.recmenu_m:hover{border-bottom: 1px solid red; cursor: pointer; }
+
+
+
+/*섹션4 이미지텍스트상자 전체*/
+#recwrap{width: 1140px; height: 390px;  position: relative; overflow: hidden;}
+
+
+
+
+/*이미지 박스와 텍스트박스들*/
+
+#sec4box1{width: 1140px; height:395px ;}
+
+.recmini{width:130px ; height: 280px;  float: left; margin: 10px 0 0 51px;  display: flex; flex-wrap: wrap; justify-content: center; border: 1px solid #ddd;
+    box-shadow: 4px 4px 4px gray;}
+
+
+
+.imgbox1{width: 120px; height: 175px; }
+
+
+.textbox1{width: 110px; height: 105px;display: flex; flex-wrap: wrap; justify-content: center;  align-content: center; }
+
+.textbox1 >h4{font-size: 10px ;text-align: center; 
+	height: 50px; color: #555555; display: flex; align-items: center; margin: 5px 0 0 0px;}
+
+	.textbox1 >h4:hover{text-decoration: underline; cursor: pointer;}
+
+	.textbox1 >h5{ color: #555555; font-size: 12px; width: 100%; text-align: center;  line-height: 14px; }
+
+	.textbox1 >h5:hover{text-decoration: underline; cursor: pointer;}
+
+/*.textbox1 >p>del{font-size: 12px; text-align: center;margin: -10px 0 0 0px; color: #dddddd}*/
+
+
+
+.bannerbox{width: 1140px; height:105px ;  display: flex; justify-content: space-evenly;  align-items: flex-end;}
+
+.minibanner{width:436px; height: 80px; background-color: gray; margin: 10px 0 0 0px; }
+
+
+
+/*섹션5시작*/
+
+
+
+#section5{width: 1140px; height: 1050px;  display: flex;flex-wrap: wrap;  justify-content: center; align-content: flex-start; margin: 20px auto;}
+
+
+
+
+/*주목 이달이책*/
+
+#attention{width:500px ; height: 375px ; margin: 10px 20px;overflow: hidden;}
+
+
+
+#atna{width: 500px; height: 35px;  display: flex; justify-content: space-between ; border-bottom: 1px solid black;}
+
+
+#atname1{width: 200px; height: 35px;  display: flex; justify-content: flex-start; align-items: center;}
+
+#atname1>h3{font-size: 18px;}
+
+#atname1>p{font-size: 11px; color: #666666; margin: 5px 0 0 10px;}
+
+#atname1>p:hover{cursor: pointer;}
+
+#atname2{width: 55px; height: 35px; display: flex;  justify-content: space-evenly; align-items: center;}
+
+#atname2>  span {   font-size: 16px; color:#fff; 
+	cursor: pointer;  width:18px ; line-height: 18px; background-color: gray;}
+
+	#atname2> span:hover {background: rgba(255,255,255,0.8); color:#000;}
+
+	.prev5{padding: 0px 5px 0px 5px;}
+
+	.next5{padding: 0px 5px 0px 5px;}
+
+
+/*주목 이달이책 그림 이미지 넣는곳 attmini 길이 700대로 수정해야함*/
+
+
+.attwrap{width:1500px ; height: 315px; margin:15px 0 0 10px;}
+
+
+.attwrap ul>li{float: left;  width: 500px; height: 315px; }
+
+.attbook1{width: 500px; height: 157px;  display: flex;}
+
+.attimg1{width: 160px; height: 157px; display: flex; justify-content: center;}
+
+.attimg1>img{height: 95%;}
+
+.atttext1{width: 320px; height: 157px; display: flex; flex-wrap: wrap; }
+
+.atttext1>span{color: orange;  font-size: 20px; margin: 25px 0 0 0px;}
+
+.atttext1>h3{color: #ef544d; font-size: 20px;margin: 28px 0 0 5px;}
+
+.atttext1>h2{font-size: 14px; margin: -25px 0 0 0px;}
+
+.atttext1>p{font-size: 14px;margin: -25px 0 0 0px;}
+
+.attbook2{width: 500px; height: 157px; display: flex;}
+
+.attimg2{width: 160px; height: 157px; display: flex; justify-content: center;}
+
+.attimg2>img{height: 95%;}
+
+.atttext2{width: 320px; height: 157px; display: flex; flex-wrap: wrap; }
+
+
+.atttext2>span{color: orange;  font-size: 20px; margin: 25px 0 0 0px;}
+
+.atttext2>h3{color: #ef544d; font-size: 20px;margin: 28px 0 0 5px;}
+
+.atttext2>h2{font-size: 14px; margin: -25px 0 0 0px;}
+
+.atttext2>p{font-size: 14px;margin: -25px 0 0 0px;}
+
+
+
+
+/* 특가할인 & 정가인하 */
+
+#main5_box2 {width:541px; height:355px;}
+
+.salemenu {width:100%; height:40px; border-bottom:1px solid #333;}
+
+.salemenu > li {text-align: center; width: 98px; height: 40px; float:left; padding: 11px 18px; font-size: 14px; font-weight: bold; cursor:pointer; background-color: #fff;border-bottom:1px solid #333;}
+
+.salemenu > .sale_on {border:1px solid #000; border-bottom:none; color:#f7695b; background-color:#fff;}
+
+.kind {width:100%; height:355px;}
+
+.kind > li {width:100%; height:100%; display:none;}
+
+.kind > .sale_on {display:block;}
+
+.sale_content {width:100%; height:100%; display:flex; align-items:center; justify-content:space-evenly; padding:5% 1%;}
+
+.sale1 {width:20%; height:100%; cursor: pointer;}
+
+.sale1 > div {width:103px; height:240px;}
+
+.sale_imgbox1 {width: 103px; height: 145px; position: relative;}
+
+.sale_imgbox1 > img {width:103px; height:145px;}
+
+.sale_imgbox1 > span {position: absolute; top: 100px; right: -5px;}
+
+.sale_imgbox1 > span > p {font-size: 11px; color: #feffb0; position: absolute; top: 5px; right: 13px; letter-spacing:-1px}
+
+.sale_imgbox1 > span > h3 {font-size: 15px; color: #fff; position: absolute; top: 17px; right: 14px; letter-spacing:-1px}
+
+.sale_textbox1 {width: 103px; height: 100px; padding: 10px 0px;}
+
+.sale_textbox1 > h4 {text-align:center; font-size: 10px; color: #555; letter-spacing:-1px; margin-bottom: 5px; height: 30px;}
+
+.sale_textbox1 > h4:hover {text-decoration: underline;}
+
+.sale_textbox1 > p {text-align:center; font-size:11px; color:#777; letter-spacing:-1px;  }
+
+.sale_textbox1 > h5 {text-align:center; font-size: 12px; color:#555; letter-spacing:-1px;  }
+
+.sale2 {width:20%; height:100%; cursor: pointer;}
+
+.sale2 > div {width:103px; height:240px;}
+
+.sale_imgbox2 {width: 103px; height: 145px; position: relative;}
+
+.sale_imgbox2 > img {width:103px; height:145px;}
+
+.sale_imgbox2 > span {position: absolute; top: 100px; right: -5px;}
+
+.sale_imgbox2 > span > p {font-size: 11px; color: #feffb0; position: absolute; top: 5px; right: 13px; letter-spacing:-1px}
+
+.sale_imgbox2 > span > h3 {font-size: 15px; color: #fff; position: absolute; top: 17px; right: 14px; letter-spacing:-1px}
+
+.sale_textbox2 {width: 103px; height: 100px; padding: 10px 0px;}
+
+.sale_textbox2 > h4 {text-align:center; font-size: 10px; color: #555; letter-spacing:-1px; margin-bottom: 5px; height: 40px; background-color: red;}
+
+
+.sale_textbox2 > h4:hover {text-decoration: underline;}
+
+.sale_textbox2 > p {text-align:center;  font-size:11px; color:#777; letter-spacing:-1px}
+
+.sale_textbox2 > h5 {text-align:center; font-size: 12px; color:#555; letter-spacing:-1px;}
+
+
+
+
+/*HOT중고도서*/
+
+
+#second{width:1140px ; height: 305px; background-color: orange; display: flex; justify-content: space-evenly;}
+
+.secbox{width:756px ; height:274px ; background-color: sienna; display: flex; justify-content: space-between; margin: 15px 0 0 0px; }
+
+.secmini{width:170px ; height:274px ; background-color: blue;}
+
+
+#secbox2{width: 324px; height: 274; background-color: blueviolet; display: flex; flex-wrap: wrap; align-items: center;}
+
+.secbanner{width:324px ;height:124px ; background-color: skyblue; }
+
+/*cd dvd ebook 섹션!!*/
+
+#album{width:1140px ; height: 620px;  display: flex; justify-content: space-evenly; align-items: center;}
+
+.album_mini{width: 365px; height: 620px; }
+
+/*cd 제목*/
+
+.cd_top{width: 365px; height: 22px;  display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid black;}
+
+.cd_top>h3{font-size: 16px ; color: #3d4d5f;}
+
+.cd_top>p{font-size: 11px;}
+
+.cd_top>p:hover{cursor: pointer;}
+
+
+/*cd 중간*/
+
+.cd_middle{width: 365px; height: 350px;  position: relative; overflow: hidden;background-color: #f7f7f7;}
+
+.cdprev {  display: block; font-size: 35px; color:#fff; 
+	cursor: pointer; height: 50px;  }
+
+	.cdnext { overflow: hidden;  display: block; font-size: 35px; color:#fff; 
+		cursor: pointer; height: 50px;  }
+
+		.cdprev:hover { color:red; cursor: pointer;}
+
+		.cdnext:hover { color:red; cursor: pointer;}
+
+
+		.cdprev {left:0; position: absolute; top: 30%; left: 0%;}
+
+		.cdnext {right:0; position: absolute; top: 30%; right: 0;}
+
+
+
+		.cd_middle>ul{width: 2000px; height: 340px; }
+
+		.cd_middle>ul>li{float: left; border-right: 1px solid black;}
+
+		.cd_middle>ul>li>.cd_imgbox1{width: 365px; height:236px ; margin: 10px auto; display: flex; justify-content: center; align-items: center;}
+
+
+		.cd_middle>ul>li>.cd_imgbox1>img{height: 100%;}
+		.cd_middle>ul>li>.cd_imgbox1>img:hover{cursor: pointer;}
+
+		.cd_middle>ul>li>.cd_textbox1{width: 365px; height:63px ; }
+
+		.cd_textbox1>h3{font-size: 12px;text-align: center;}
+
+		.cd_textbox1>p{font-size: 14px; text-align: center;}
+
+/*cd 앨범들*/
+
+.cd_down{width: 365px; height: 147px; background-color: coral; display: flex;}
+
+.cd_d_mini{width:182.5px ; height: 147px;  display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+
+.cd_d_mini>img{width: 60%; height: 60%;}
+
+.cd_d_mini>img:hover{cursor: pointer;}
+
+.cd_d_mini>h3{font-size: 12px; color: #3d4d5f; margin: 7px auto;}
+
+.cd_d_mini>h3:hover{cursor: pointer; text-decoration: underline;}
+
+/*cd 배너*/
+
+.cd_bottom{width: 365px; height: 90px;  margin: 10px 0 0 0px;}
+
+.cd_bottom:hover{cursor: pointer;}
+
+.cd_bottom>img{width: 100%; height: 100%;}
+
+/*dvd*/
+
+
+/*DVD 제목*/
+
+.dvd_top{width: 365px; height: 22px; border-bottom:1px solid black ; display: flex; justify-content: space-between; align-items: center;}
+
+.dvd_top>h3{font-size: 16px ; color: #3d4d5f;}
+
+.dvd_top>p{font-size: 11px;}
+
+.dvd_top>p:hover{cursor: pointer;}
+
+
+/*dvd 중간*/
+
+.dvd_middle{width: 365px; height: 350px; background-color: #f7f7f7; position: relative;  overflow: hidden;}
+
+.dvdprev {  display: block; font-size: 35px; color:#fff; 
+	cursor: pointer; height: 50px;  }
+
+	.dvdnext { overflow: hidden;  display: block; font-size: 35px; color:#fff; 
+		cursor: pointer; height: 50px;  }
+
+		.dvdprev:hover { color:red; cursor: pointer;}
+
+		.dvdnext:hover { color:red; cursor: pointer;}
+
+
+		.dvdprev {left:0; position: absolute; top: 30%; left: 0%;}
+
+		.dvdnext {right:0; position: absolute; top: 30%; right: 0;}
+
+
+
+		.dvd_middle>ul{width: 2000px; height: 340px; background-color: #f7f7f7; }
+
+		.dvd_middle>ul>li{float: left; border-right: 1px solid black;}
+
+		.dvd_middle>ul>li>.dvd_imgbox1{width: 365px; height:236px ; margin: 10px auto; display: flex; justify-content: center; align-items: center;}
+
+		.dvd_middle>ul>li>.dvd_imgbox1>img{width: 50%; height: 100%;}
+
+		.dvd_middle>ul>li>.dvd_imgbox1>img:hover{cursor: pointer;}
+
+		.dvd_middle>ul>li>.dvd_textbox1{width: 365px; height:63px ; background-color: #f7f7f7;}
+
+		.dvd_textbox1>h3{font-size: 12px;text-align: center;}
+
+		.dvd_textbox1{font-size: 14px; text-align: center;}
+
+/*dvd 앨범들*/
+
+.dvd_down{width: 365px; height: 147px;  display: flex;}
+
+.dvd_d_mini{width:182.5px ; height: 147px;   display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+
+.dvd_d_mini>img{width: 60%; height: 60%;}
+
+.dvd_d_mini>img:hover{cursor: pointer;}
+
+.dvd_d_mini>h3{font-size: 12px; color: #3d4d5f; margin: 7px auto;}
+
+.dvd_d_mini>h3:hover{cursor: pointer; text-decoration: underline;}
+
+/*dvd 배너*/
+
+.dvd_bottom{width: 365px; height: 90px; background-color: red; margin: 10px 0 0 0px;}
+
+.dvd_bottom:hover{cursor: pointer;}
+
+.dvd_bottom>img{width: 100%; height: 100%;}
+
+
+
+/*ebook*/
+
+
+/*ebbok 제목*/
+
+.ebook_top{width: 365px; height: 22px;  display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid black;}
+
+.ebook_top>h3{font-size: 16px ; color: #3d4d5f;}
+
+.ebook_top>p{font-size: 11px;}
+
+.ebook_top>p:hover{cursor: pointer;}
+
+
+/*ebook 중간*/
+
+.ebook_middle{width: 365px; height: 497px;  position: relative; overflow: hidden; }
+
+
+
+.ebookprev {  display: block; font-size: 35px; color:#fff; 
+	cursor: pointer; height: 50px;  }
+
+	.ebooknext { overflow: hidden;  display: block; font-size: 35px; color:#fff; 
+		cursor: pointer; height: 50px;  }
+
+		.ebookprev:hover { color:red; cursor: pointer;}
+
+		.ebooknext:hover { color:red; cursor: pointer;}
+
+
+		.ebookprev {left:0; position: absolute; top: 35%; left: 0%;}
+
+		.ebooknext {right:0; position: absolute; top: 35%; right: 0;}
+
+
+
+		.ebook_middle>ul{width: 2000px; height: 497px; background-color: #f7f7f7;}
+
+		.ebook_middle>ul>li{float: left; border-right: 1px solid black;}
+
+		.ebook_middle>ul>li>.ebook_imgbox1{ width: 365px; height:380px ;  margin: 10px auto; display: flex; justify-content: center; align-items: center;}
+
+
+		.ebook_middle>ul>li>.ebook_imgbox1>img{width: 70%; height: 80%; }
+
+		.ebook_middle>ul>li>.ebook_imgbox1>img:hover{cursor: pointer;}
+
+		.ebook_middle>ul>li>.ebook_textbox1{width: 365px; height:93px ; }
+
+		.ebook_textbox1>h3{font-size: 17px;text-align: center; font-weight: normal;}
+
+		.ebook_textbox1{font-size: 14px; text-align: center;background-color: #f7f7f7;}
+
+/*ebook 배너*/
+
+.ebook_bottom{width: 365px; height: 90px; margin: 10px 0 0 0px;}
+
+.ebook_bottom:hover{cursor: pointer;}
+
+.ebook_bottom>img{width: 100%; height: 100%;}
+
+
+
+/*섹션끝남*/
+
+
+
+/*서비스및혜택*/
+
+#big2{width: 100%; height: 240px;  display: flex; justify-content: center;}
+
+#service{width: 1140px; height: 240px; }
+
+#service_header{width: 100%; height:30px;  border-bottom: 2px solid black; display: flex; justify-content: space-between; align-items: center; }
+
+#service_header_left>h3{margin: 0 30px 0 0px;}
+
+#service_header_left>p{display: inline-block; margin: 0px 20px 0 20px;}
+
+.servbox{width: 100%; height: auto;}
+
+.servbox>li{float: left; width:20%; height: 200px; border-right: 2px dashed gray;  }
+
+.servbox>li:last-of-type{border: none;}
+
+.servbox>.servmini1{width:20%; height: auto;  border-right: 1px solid black; }
+
+
+.servbox>li>.servmini1{font-size: 12px; }
+
+.servmini1>li:first-child {font-size: 15px;  font-weight: bold; line-height: 30px;  color: black; 
+	margin: 5px 10px; }
+
+	.servmini2>li:first-child {font-size: 15px;  font-weight: bold; line-height: 30px;  color: black; 
+		margin: 5px 10px;}
+
+		.servmini3>li:first-child {font-size: 15px;  font-weight: bold; line-height: 30px;  color: black; 
+			margin: 5px 10px;}
+
+			.servmini4>li:first-child {font-size: 15px;  font-weight: bold; line-height: 30px;  color: black; 
+				margin: 5px auto;}
+
+				.servmini5>li:first-child {font-size: 15px;  font-weight: bold; line-height: 30px;  color: black;
+					margin: 5px auto;}
+
+
+
+					.servmini1>li{ color: #888888; margin: 5px 0 0 10px;}
+
+					.servmini2>li{ color: #888888; margin: 5px 0 0 10px; font-size: 12px;}
+
+					.servmini2>li>img{margin: 4px 3px -5px 0px;}
+
+					.servmini3>li{ color: #888888; margin: 10px 0 0 10px; font-size: 12px;}
+
+					.servbox>li>.servmini4>.serv_head{font-size: 15px;  font-weight: bold; line-height: 15px;
+						 color: black;
+						margin: 10px 10px 0 10px; border-bottom: 1px solid black; display: flex; 
+						align-items: flex-start;}
+
+						.servbox>li>.servmini4>.serv_bottom{border-top: 1px solid black;}
+
+						.servmini4>li{ color: #888888; margin: 20px 10px 0 10px; font-size: 12px;
+						height: 40px; display: flex; align-items: center; }
+
+
+							.servmini4>li>.cs{background-color:#fff ; }
+
+							.servmini5>#park{width: 100%; height:30px ; background-color: sienna; display: flex; flex-wrap: wrap;}
+
+
+							#park{width: 100%;  display: flex; margin: 5px 0 0 0px;}
+
+							#park>h4{width: 50%;  display: flex;
+								justify-content: center; }
+
+								#park>h5{width: 50%;   display: flex;
+									justify-content: center; margin: 3px 0 0 0px;}
+
+
+
+									#parkimg{width: 100%;  height: 80px;display: flex; justify-content: center; margin: 5px auto;}
+
+									#parkimg>img{width: 70%; height: 100%;}
+
+									#parkbottom{width: 100%; height:auto ; display: flex; flex-wrap: wrap; align-content: space-around;}
+
+
+									#parkbottom>h5{ margin: 5px 0px 5px 5px;color:gray;}
+
+									#parkbottom>p{ font-size: 12px;margin: 0px 0px 0px 5px; color:gray;}
+
+
+
+
+
+
+/*푸터시작*/
+
+footer{ width: 100%; height: auto; background-color: #58cfc7; margin: 10px 0 0 0px;  }
+
+.footeron{width: 1140px; height:60px ; background-color: #58cfc7; display: flex; margin: 0px auto; }
+
+
+.on1{width: 50%;  display: flex; justify-content: center; align-items: center; color: #fff; border-right: 1px solid #fff;}
+
+.on1>h3{font-weight: normal;}
+
+.on1>h3>span{color: #fff5b1; font-weight: bold;}
+
+.on2{width: 50%;  display: flex; justify-content: center; align-items: center; color: #fff;}
+
+.on2>h3{font-weight: normal;}
+
+.on2>h3>span{color: #fff5b1; font-weight: bold;}
+
+#footermid{width: 100%; height: 210px; background-color: #f7f7f7; margin: 0px auto;}
+
+#fmid1{width: 1140px; height:20%; margin: 0px auto;}
+
+#fmid1>ul>li{float: left; margin: 10px auto;color: gray; }
+
+#fmid1>ul>li>a{text-decoration: none;color: gray; }
+
+.midfoot>a{ color:black; font-weight: bold;}
+
+.midfoot:hover{text-decoration: underline;}
+
+#fmid2{width: 1140px; height:60%;margin: 0px auto; display: flex; }
+
+#fmid2>#fmini1{width: 420px; height:88px; border-right: 1px solid #acacac; display: flex;  flex-wrap: wrap;  margin: 20px 0 0 12px;}
+
+#fmini1>h4{font-size: 12px; height: 18px; color: #2a2a2a; width: 100%; }
+
+#fmini1>ul>li{font-size: 12px; color: #acacac;width: 100%;b}
+
+
+
+#fmid2>#fmini2{width: 254px; height:88px;border-right: 1px solid #acacac;  display: flex;  flex-wrap: wrap; margin: 20px 0 0 12px;}
+
+
+#fmini2>h4{font-size: 12px; height: 18px; color: #2a2a2a; width: 100%; }
+
+#fmini2>ul>li{font-size: 12px; color: #acacac;width: 100%;}
+
+#fmini2>h4>img{margin: 0px 0 -3px 0px;}
+
+#fmini2>h4>img:hover{cursor: pointer;}
+
+#fmid2>#fmini3{width: 420px; height:88px;display: flex;  flex-wrap: wrap; margin: 20px 0 0 12px;}
+
+
+#fmini3>h4{font-size: 12px; height: 5px; color: #2a2a2a; width: 100%; }
+
+#fmini3>ul>li>img{margin: 5px 0 0px 0px;}
+
+#fmini3>ul>li>img:hover{cursor: pointer;}
+
+#fmini3>ul>li{font-size: 12px; color: #acacac;width: 100%;}
+
+
+
+
+#fmid3{width: 1140px; height:20%;margin: 0px auto;display: flex; flex-wrap: wrap; align-items: flex-start; }
+
+#fmid3>p{font-size: 11px; color:#666666 ; font-weight: bold;width: 100%; margin: 5px 0 0 0px;}
+#fmid3>span{font-size: 11px; color:#b8b8b8 ;width: 100%; margin: -10px 0 0 0px; }
+
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+
+	<header>
+
+		<div id='headfull'>
+
+
+			<div id='midhfull'>
+
+				<ul class=topmenu>
+
+					<li class='mid1'>홈</li>
+					<li class='mid2'>도서 바로가기</li>
+					<li class='mid3'>티켓</li>
+					<li class='mid4'>투어</li>
+					<li class='mid5'>아이마켓</li>
+
+				</ul>
+
+				<ul class=topmenu2>
+
+					<li class='mid6'>로그인</li>
+					<li>ㅣ</li>
+					<li class='mid7'>회원가입</li>
+					<li>ㅣ</li>
+					<li class='mid8'>마이페이지</li>
+					<li>ㅣ</li>
+					<li class='mid9'>고객센터</li>
+					<li>ㅣ</li>
+					<li class='mid10'>모바일APP</li>
+					<li>ㅣ</li>
+					<li class='mid11'>스마트콘<span>off</span></li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+		<!--헤드미드와 네비는 분리되있음-->
+
+
+		<div id='headmid'>
+
+
+			<!----------------로고----------->
+
+			<div id='logo'>
+
+				<img src="img/logo.png">
+			</div>
+
+			<!----------------검색창중간----------->
+
+			<div id='searchmid'>
+
+				<div id='search'>
+
+					<input name="search" placeholder="유퀴즈 화제 도서 <최재천의 공부>" name="search"/> 
+
+					</div>
+
+					<i class='search_btn'><img src='img/btn_search.png'> </i>
+
+					<div id=' search2'>
+
+						<ul class=search_under>
+
+							<li><a href="#"> 걷기의 세계</a></li>
+							<li>ㅣ</li>
+							<li><a href="#"> 초등만점왕</a></li>
+							<li>ㅣ</li>
+							<li><a href="#"> 말의 알고리즘</a></li>
+							<li>ㅣ</li>
+							<li><a href="#"> 멜로가체질</a></li>
+							<li>ㅣ</li>
+							<li><a href="#"> 앤서니브라운</a></li>
+
+						</ul>
+
+					</div>
+
+				</div>
+				<!----------------오른쪽 미니 책 광고----------->
+				<div id='top_ad'>
+
+					<img src="img/adb.png">
+
+				</div>
+
+			</div>
+
+
+
+			<!--네비 시작-->
+
+
+			<div class="navwrap">
+				<nav>
+					<ul>
+						<li id="nc">
+							<i class="fas fa-bars"></i> 전체 카테고리 
+							<i class="fas fa-angle-down" id="down1"></i>
+							<i class="fas fa-angle-up" id="up1"></i>
+						</li>
+						<li><a href="sub.html">베스트</a></li>
+						<li><a href="sub.html">미디어</a></li>
+						<li><a href="sub.html">신간</a></li>
+						<li><a href="sub.html">이벤트</a></li>
+						<li>　</li>
+						<li><a href="sub.html">국내</a></li>
+						<li><a href="sub.html">외국</a></li>
+						<li><a href="sub.html">eBook</a></li>
+						<li><a href="sub.html">중고</a></li>
+						<li><a href="sub.html">음반</a></li>
+						<li><a href="sub.html">DVD</a></li>
+						<li><a href="sub.html">북DB</a></li>
+					</ul>
+
+
+					<!---------서브메뉴----------->
+					<div class="navslide">
+						<ul>
+							<li><span>국내도서</span> <i class="fas fa-angle-right"></i><img src="img/categorybook.jpg" alt="">
+								<ul>
+									<li><span>소설</span><span>자격서·수험서</span></li>
+									<li><span>장르소설</span><span>공무원·수험서</span></li>
+									<li><span>시·에세이</span><span>컴퓨터·인터넷</span></li>
+									<li><span>경제경영</span><span>전공·대학교재</span></li>
+									<li><span>자기계발</span><span>여행</span></li>
+									<li><span>사회과학</span><span>취미레저</span></li>
+									<li><span>역사·문화</span><span>건강뷰티</span></li>
+									<li><span>예술·대중문화</span><span>잡지</span></li>
+									<li><span>인문</span><span>만화라이트노벨</span></li>
+									<li><span>자연·과학</span><span>유아동전집</span></li>
+									<li><span>종교·역학</span><span class="scolor">예약판매</span></li>
+									<li><span>유아</span><span class="scolor">프리미엄북</span></li>
+									<li><span>아동</span></li>
+									<li><span>가정과생활</span></li>
+									<li><span>청소년</span></li>
+									<li><span>초등학습</span></li>
+									<li><span>중등학습</span></li>
+									<li><span>고등학습</span></li>
+									<li><span>국어·외국어·사전</span></li>
+								</ul>
+							</li>
+							<li><span>외국도서</span> <i class="fas fa-angle-right"></i>
+								<ul>
+									<li><span>어린이</span></li>
+									<li><span>문학</span></li>
+									<li><span>ELT·사전</span></li>
+									<li><span>일본도서</span></li>
+									<li><span>경제·인문</span></li>
+									<li><span>실용·예술</span></li>
+									<li><span>대학·전문서적</span></li>
+									<li><span>컴퓨터</span></li>
+									<li><span>해외잡지</span></li>
+									<li><span>해외주문원서</span></li>
+									<li><span>학습교구/게임</span></li>
+									<li><span class="scolor">예약판매</span></li>
+									<li><span class="scolor">원서vs번역서</span></li>
+								</ul>
+							</li>
+							<li><span>eBook</span> <i class="fas fa-angle-right"></i>
+								<ul>
+									<li><span>소설</span></li>
+									<li><span>장르소설</span></li>
+									<li><span>시·에세이</span></li>
+									<li><span>경제경영</span></li>
+									<li><span>자기계발</span></li>
+									<li><span>인문·역사</span></li>
+									<li><span>예술·종교</span></li>
+									<li><span>자연·사회과학</span></li>
+									<li><span>가정·취미·건강</span></li>
+									<li><span>초중고학습서</span></li>
+									<li><span>어학서·수험서</span></li>
+									<li><span>대학교재</span></li>
+									<li><span>외국도서</span></li>
+									<li><span>만화</span></li>
+									<li><span>어린이·청소년</span></li>
+									<li><span>잡지</span></li>
+									<li><span>성인</span></li>
+									<li><span>북씨</span></li>
+									<li><span class="scolor">새로나온 eBook</span></li>
+									<li><span class="scolor">대여 eBook</span></li>
+								</ul>
+							</li>
+							<li><span>중고</span> <i class="fas fa-angle-right"></i>
+								<ul>
+									<li><span>소설</span></li>
+									<li><span>에세이·시</span></li>
+									<li><span>경제경영</span></li>
+									<li><span>자기계발</span></li>
+									<li><span>사회과학</span></li>
+									<li><span>역사</span></li>
+									<li><span>예술·대중문화</span></li>
+									<li><span>인문</span></li>
+									<li><span>자연과 과학</span></li>
+									<li><span>종교·역학</span></li>
+									<li><span>유아</span></li>
+									<li><span>아동</span></li>
+									<li><span>가정과생활</span></li>
+									<li><span>청소년</span></li>
+									<li><span>초중고학습서</span></li>
+									<li><span>국어·외국어</span></li>
+									<li><span>자격서·수험서</span></li>
+									<li><span>전공·대학교재</span></li>
+									<li><span>외국도서</span></li>
+									<li><span>건강·미용</span></li>
+									<li><span>만화</span></li>
+									<li><span>브랜드전집</span></li>
+									<li><span>중고음반</span></li>
+									<li><span>중고DVD</span></li>
+									<li><span class="scolor">균일가몰</span></li>
+									<li><span class="scolor">판매자 로그인</span></li>
+								</ul>
+							</li>
+							<li><span>음반</span> <i class="fas fa-angle-right"></i>
+								<ul>
+									<li><span>가요</span><span>재즈</span></li>
+									<li><span>팝</span><span>유아·아동·태교</span></li>
+									<li><span>클래식</span><span>뮤직 DVD</span></li>
+									<li><span>국악</span><span>O.S.T</span></li>
+									<li><span>일본음악</span><span>월드뮤직</span></li>
+									<li><span>락</span><span>종교</span></li>
+									<li><span>뉴에이지</span><span class="scolor">예약판매</span></li>
+									<li><span>해외구매</span><span class="scolor">스타샵</span></li>
+									<li><span>수입음반</span><span class="scolor">아티스트파일</span></li>
+									<li><span></span><span class="scolor">LP</span></li>
+								</ul>
+							</li>
+							<li><span>DVD</span> <i class="fas fa-angle-right"></i>
+								<ul>
+									<li><span>블루레이</span><span>TV시리즈</span></li>
+									<li><span>EBS교육용</span><span>해외구매</span></li>
+									<li><span>유아동 DVD</span><span>Blu-ray</span></li>
+									<li><span>영화</span><span>애니메이션</span></li>
+									<li><span>다큐멘터리</span><span>예약판매</span></li>
+									<li><span>건강·취미·스포츠</span></li>
+
+								</ul>
+							</li>
+							<li><span>굿즈#</span> <i class="fas fa-angle-right"></i><img src="img/goods.jpg" alt="">
+								<ul>
+									<li><span>문구/팬시</span></li>
+									<li><span>사무/학용</span></li>
+									<li><span>학습</span></li>
+									<li><span>독서용품</span></li>
+
+
+								</ul>
+							</li>
+						</ul>
+						<span>X</span>
+					</div>
+				</nav>
+			</div>
+
+
+		</header>
+
+		<!--슬라이더 시작-->	
+
+		<div id='dotslider'>
+
+
+			<!--슬라이더에 있는 광고미니책--->
+
+			<div id='leftadv'>
+
+				<img src="img/advbook1.jpg" alt='' id='slideradv'>
+
+				<img src="img/advmouse.jpg" alt='' id='advmouse'>
+
+				<img src="img/ohunyoung.png" alt='' id='miniadv'>
+
+			</div>
+
+
+			<!--슬라이더에 있는 광고미니책--->
+
+
+			<div id='slider'>
+
+
+
+				<ul class="slide">
+
+
+
+
+					<li><img src="img/bimg1.png" id='first'></li>
+
+
+					<li><img src="img/bimg2.jpg"></li>
+
+
+					<li><img src="img/bimg3.png"></li>
+
+					<li><img src="img/bimg4.png"></li>
+
+					<li><img src="img/bimg5.png"></li>
+
+
+
+				</ul>
+
+
+				<!-광고 미니책 누르면 나오는 슬라이더에 나오는 광고----->
+
+					<div id='slideradv2'>
+
+						<img src="img/advbook2.jpg" alt='' id='advmini'>
+
+						<img src="img/dontlook.png" alt='' class='advbtn1'>
+
+						<img src="img/dontlook2.png" alt=''class='advbtn2'>
+
+					</div>
+
+					<!-광고 미니책 누르면 나오는 슬라이더에 나오는 광고----->
+
+
+					</div>
+
+					<!---베스트 셀러 부분 자바스크립트 다시해보기---->
+
+					<div class='bestseller'>
+
+						<div class='best'>베스트셀러</div>
+
+						<div class='bestmenu'>
+
+							<div class='today'>오늘</div>
+							<div class='week'>주간</div>
+
+						</div>
+
+						<div class='rankingbox1'>
+
+							<div class="rank1">
+								<span>1</span>
+								<i class="fas fa-minus"></i>
+								<p>역행자</p>
+							</div>
+
+							<div class="rank1">
+								<span>2</span>
+								<i class="fas fa-caret-up"></i>
+								<p>그리스 로마신화 29:오디세..</p>
+							</div>
+
+							<div class="rank1">
+								<span>3</span>
+								<i class="fas fa-minus"></i>
+								<p>눈물 한 방울</p>
+							</div>
+
+							<div class="rank1">
+								<span>4</span>
+								<i class="fas fa-caret-down"></i>
+								<p>이상한 과자 가게 전천당15</p>
+							</div>
+
+							<div class="rank1">
+								<span>5</span>
+								<i class="fas fa-minus"></i>
+								<p>불편한 편의점(40만부 기념..</p>
+							</div>
+
+							<div class="rank1">
+								<span>6</span>
+								<i class="fas fa-caret-up"></i>
+								<p>작별인사</p>
+							</div>
+
+							<div class="rank1">
+								<span>7</span>
+								<i class="fas fa-caret-down"></i>
+								<p>친밀한 이방인</p>
+							</div>
+
+							<div class="rank1">
+								<span>8</span>
+								<h5>NEW</h5>
+								<p>변화하는 세계질서</p>
+							</div>
+
+							<div class="rank1">
+								<span>9</span>
+								<i class="fas fa-caret-down"></i>
+								<p>ETS토익 정기시험 기출문제..</p>
+							</div>
+
+
+						</div>
+
+						<div class='rankingbox2'>
+
+							<div class="rank2">
+								<span>1</span>
+								<i class="fas fa-minus"></i>
+								<p>사랑이무기다</p>
+							</div>
+
+							<div class="rank2">
+								<span>2</span>
+								<i class="fas fa-caret-up"></i>
+								<p>역행자</p>
+							</div>
+
+							<div class="rank2">
+								<span>3</span>
+								<i class="fas fa-minus"></i>
+								<p>불편한 편의점(40만부 기념..</p>
+							</div>
+
+							<div class="rank2">
+								<span>4</span>
+								<i class="fas fa-caret-down"></i>
+								<p>변화하는 세계 질서</p>
+							</div>
+
+							<div class="rank2">
+								<span>5</span>
+								<i class="fas fa-minus"></i>
+								<p>모든것은 기본에서 시작한다</p>
+							</div>
+
+							<div class="rank2">
+								<span>6</span>
+								<i class="fas fa-caret-up"></i>
+								<p>다정한 것이 살아남는다</p>
+							</div>
+
+							<div class="rank2">
+								<span>7</span>
+								<i class="fas fa-caret-down"></i>
+								<p>친밀한 이방인</p>
+							</div>
+
+							<div class="rank2">
+								<span>8</span>
+								<h5>NEW</h5>
+								<p>작별인사</p>
+							</div>
+
+							<div class="rank2">
+								<span>9</span>
+								<i class="fas fa-caret-down"></i>
+								<p>멘탈을 바꿔야 인생이 바뀐다</p>
+							</div>
+
+
+
+
+
+
+						</div>
+
+
+
+
+						<div id='reco'>추천</div><div id='reco2'>2022 수능 카운트 다운!</div>
+
+
+					</div>
+				</div>
+
+
+
+				<!--------슬라이더 밑 메뉴부분----------->
+
+				<div id='sbanner'>
+
+					<ul class='sbannerbox'>
+
+						<li class="second">핫클릭 이벤트</li>
+						<li class="second">무지개 물고기 신간</li>
+						<li class="second">이달의 책</li>
+						<li class="second">추천이벤트</li>
+						<li class="second">EBS기획전</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+
+			<!--슬라이더 밑에 섹션시작-->
+
+			<div id='fullsection'>
+
+				<div id='full_side'>
+
+					<div class='sidewrap'>
+
+						<div class='side_img'>
+
+							<ul>
+
+								<li><img src="img/sideslide1.jpg" alt='' id='sideb'></li>
+
+							</ul>
+
+
+						</div>
+
+						<div class='side_btn'>
+
+							<span class="sideprev">&lt;</span>
+							<span class="sidenext">&gt;</span>
+
+						</div>
+
+
+					</div>
+					<img src="img/sideimg.jpg"  id='side_mini'>
+					<section>
+
+
+
+
+
+						<!--첫번째 섹션 추천과 트렌드---->
+
+						<div id='section1'>
+
+							<!--첫번째 섹션 헤더---->
+
+
+							<div id='rec_header'>
+
+								<h3>인터파크<span>추천</span><i>!</i></h3>
+								<h5>더보기<span><i class="fas fa-caret-right"></i></span></h5>
+							</div>
+
+
+							<div id='recommend'>
+
+								<div id='recoslidewrap'>
+
+									<!--------추천 슬라이드 ----->
+
+									<ul class='recoslide'>
+
+										<li class='recosec'>
+
+											<div class='rec_imgbox'>
+
+												<img src="img/heart.png" alt='' class='heartclip' >
+
+												<img src="img/sec1_book1.jpg" alt='' >
+
+											</div>
+
+											<div class='recosec_mini'>
+
+												<div class='recosecbox'>
+
+													<span>★★★★★</span><p>10</p>
+
+													<h2>나를 살게하는것들</h2>
+													<h4>수오서재 출판사</h4>
+													<h5>대한민국 최고의 소통 전문가 김창옥이 제안하는 지속가능한 삶을 꾸리는 회복과 충전의 절대원칙 </h5>
+												</div>
+
+
+
+											</div>
+
+											<div class='rec_imgbox'>
+
+												<img src="img/sec1_book2.jpg" alt=''>
+
+											</div>
+
+										</li>
+
+										<li class='recosec'>
+
+											<div class='rec_imgbox'>
+
+												<img src="img/heart.png" alt='' class='heartclip' >
+
+												<img src="img/sec1_book2.jpg" alt='' >
+
+											</div>
+
+											<div class='recosec_mini'>
+
+												<div class='recosecbox'>
+
+													<span>★★★★☆</span><p>9</p>
+
+													<h2>빅토리노트</h2>
+													<h4>콜라주출판사</h4>
+													<h5>김하나 작가 어머니가 딸을 낳은 날부터 다섯살 생일까지 기록한 육아일기. 세월을 잇는 엄마의 깊은 사랑을 만나다.</h5>
+												</div>
+
+
+											</div>
+
+											<div class='rec_imgbox'>
+
+												<img src="img/sec1_book3.jpg" alt=''>
+
+											</div>
+
+										</li>
+
+										<li class='recosec'>
+
+											<div class='rec_imgbox'>
+
+												<img src="img/heart.png" alt='' class='heartclip' >
+
+												<img src="img/sec1_book3.jpg" alt='' >
+
+											</div>
+
+											<div class='recosec_mini'>
+
+												<div class='recosecbox'>
+
+													<span>★★★★★</span><p>10</p>
+
+													<h2>엄청나게 커다란 소원</h2>
+													<h4>웅진주니어 출판사</h4>
+													<h5>'그림형제'의 세가지 소원을 새롭게 해석한 앤서니 브라운의 그림책. 이야기를 풍성하게 만드는 작가의 그림은 언제나 반갑다.</h5>
+												</div>
+
+											</div>
+
+											<div class='rec_imgbox'>
+
+												<img src="img/sec1_book4.jpg" alt=''>
+
+											</div>
+
+										</li>
+
+										<li class='recosec'>
+
+											<div class='rec_imgbox'>
+
+												<img src="img/heart.png" alt='' class='heartclip' >
+
+												<img src="img/sec1_book4.jpg" alt='' >
+
+											</div>
+
+											<div class='recosec_mini'>
+
+												<div class='recosecbox'>
+
+													<span>★★★☆☆</span><p>8.5</p>
+
+													<h2>유럽도시기행2:빈,부다페스트,프라하,드레스덴 </h2>
+													<h4>생각의길 출판사</h4>
+													<h5>3년만의 돌아온 유시민의 신작.시대의 격랑을 이겨내고 저마다의 방식으로 자신의 존재감을 빛내는 네도시의 이야기를 담았다.</h5>
+												</div>
+
+
+											</div>
+
+											<div class='rec_imgbox'>
+
+												<img src="img/sec1_book1.jpg" alt=''>
+
+											</div>
+
+										</li>
+
+
+
+
+
+									</ul>
+
+
+
+								</div>
+								<span class="prev"><i class="fas fa-less-than"></i></span>
+								<span class="next"><i class="fas fa-greater-than"></i></span>
+
+							</div>
+							<!---------------1번째 섹션 트렌드앤이슈----------------->
+							<div id='trend'>
+								<span>Trend&Issue</span>
+
+								<div id='tr_hidden'>
+
+									<ul class='trenddot'>
+
+										<li><i class="fas fa-circle"></i></li>
+										<li><i class="fas fa-circle"></i></li>
+										<li><i class="fas fa-circle"></i></li>
+										<li><i class="fas fa-circle"></i></li>
+										<li><i class="fas fa-circle"></i></li>
+
+
+									</ul>	
+
+									<ul class='trendimg'>
+
+										<div id='trend_aj'>
+
+											<li class='trend_aj1'><div></div></li>
+											<li class='trend_aj1'><div></div></li>
+											<li class='trend_aj1'><div></div></li>
+											<li class='trend_aj1'><div></div></li>
+											<li class='trend_aj1'><div></div></li>
+
+										</div>
+									</ul>
+
+
+								</div>
+							</div>
+
+
+
+						</div>
+
+
+						<!--두번째 섹션 초이스와 책읽기와 이책어때---->
+
+						<div id='section2'>
+
+							<div id='choice'>
+
+								<div id='choice_header'>
+
+									<h2>출판사 <span>초이스<i>!</i></span></h2>
+
+									<div id='c_header_btn'>
+
+										<h5 id="h51"><span>1</span>/2</h5>
+
+										<h5 id="h52"><span>2</span>/2</h5>
+
+										<span class="choprev">&lt;</span>
+
+										<span class="chonext">&gt;</span>
+										
+
+									</div>
+								</div>
+
+								<div id='cb1'>
+
+									<div class='choice_first'>
+
+										<div class='choice_main1'>
+
+											<ul>
+												<li class='choice_contents'>
+
+													<div class='main_1'>
+
+														<div class='main_cimg'>
+
+															<img src="img/choicemain1.jpg" alt=''>
+
+														</div>
+
+														<div class='main_ccoment'>
+
+														
+														</div>
+
+
+
+													</div>
+
+												</li>
+
+												<li class='choice_contents'>
+
+													<div class='main_1'>
+
+														<div class='main_cimg'>
+
+															<img src="img/choicemain2.jpg" alt=''>
+
+														</div>
+
+														<div class='main_ccoment'>
+
+														</div>
+
+
+
+													</div>
+
+												</li>
+												<li class='choice_contents'>
+
+													<div class='main_1'>
+
+														<div class='main_cimg'>
+
+															<img src="img/choicemain3.jpg" alt=''>
+
+														</div>
+
+														<div class='main_ccoment'>
+
+														
+														</div>
+
+
+
+													</div>
+
+												</li>
+												<li class='choice_contents'>
+
+													<div class='main_1'>
+
+														<div class='main_cimg'>
+
+															<img src="img/choicemain4.jpg" alt=''>
+
+														</div>
+
+														<div class='main_ccoment'>
+
+															
+														</div>
+
+
+
+													</div>
+
+												</li>
+
+											</ul>
+
+										</div>
+
+										<div class='choice_bottom'>
+
+											<ul>
+
+												<li class='contents_btn'>
+
+												
+
+												</li>
+
+												<li class='contents_btn'>
+
+												
+												</li>
+
+												<li class='contents_btn'>
+
+												
+
+												</li>
+
+												<li class='contents_btn'>
+
+												
+
+												</li>
+											</ul>
+
+
+
+										</div>
+
+									</div>
+
+								</div>
+
+								<div id='cb2'>
+
+
+									<div class='choice_first'>
+
+
+										<div class='choice_main1'>
+
+											<ul>
+												<li class='choice_contents'>
+
+													<div class='main_1'>
+
+														<div class='main_cimg'>
+
+															<img src="img/choicemain5.jpg" alt=''>
+
+														</div>
+
+														<div class='main_ccoment'>
+
+															
+														</div>
+
+
+
+													</div>
+
+												</li>
+
+												<li class='choice_contents'>
+
+													<div class='main_1'>
+
+														<div class='main_cimg'>
+
+															<img src="img/choicemain6.jpg" alt=''>
+
+														</div>
+
+														<div class='main_ccoment'>
+
+														
+														</div>
+
+
+
+													</div>
+
+												</li>
+												<li class='choice_contents'>
+
+													<div class='main_1'>
+
+														<div class='main_cimg'>
+
+															<img src="img/choicemain7.jpg" alt=''>
+
+														</div>
+
+														<div class='main_ccoment'>
+
+														
+														</div>
+
+
+
+													</div>
+
+												</li>
+												<li class='choice_contents'>
+
+													<div class='main_1'>
+
+														<div class='main_cimg'>
+
+															<img src="img/choicemain8.jpg" alt=''>
+
+														</div>
+
+														<div class='main_ccoment'>
+
+															
+														</div>
+
+
+
+													</div>
+
+												</li>
+
+											</ul>
+
+										</div>
+
+										<div class='choice_bottom'>
+
+											<ul>
+
+												<li class='contents_btn'>
+
+												
+
+												</li>
+
+												<li class='contents_btn'>
+
+													
+												</li>
+
+												<li class='contents_btn'>
+
+											
+
+												</li>
+
+												<li class='contents_btn'>
+
+													
+												</li>
+											</ul>
+
+
+
+										</div>
+
+									</div>
+
+								</div>
+
+
+
+
+
+							</div>
+
+							<div id='read'>
+
+								<div id='read_header'>
+
+									<h2>김태훈의 <span>게으른 책 읽기</span></h2>
+								</div>
+
+								<div id='read_video'>
+
+									<iframe width="411" height="254" src="https://www.youtube.com/embed/-3cxGKIAlFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								</div>
+
+								<div id='read_comment'>
+
+									<div class='comment1'>
+
+										<i class="fab fa-waze"></i> <h4>ekihoon10..</h4>
+										<span>코로나19,새로운 정치세력의 부상 ...</span>
+
+									</div>
+
+									<div class='comment1'>
+
+
+										<i class="fab fa-waze"></i><h4>yoohyungse..</h4>
+
+										<span>스토브로 변화하는 세계의 흐름을 ...</span>
+
+
+									</div>
+								</div>
+
+							</div>
+
+
+							<div id='how'>
+
+
+								<div id='how_header'>
+
+									<h2><span>이 책</span> 어때?</h2>
+
+
+									<div class="howbookbox">
+
+										<div class="howbookimg">
+
+											<img src="img/how_ebook.png" class='ebook'>
+
+											<div class="howulbox">
+
+												<ul>
+
+													<li class='howimg'><div></div></li>
+
+													<li class='howimg'><div></div></li>
+
+													<li class='howimg'><div></div></li>
+
+												</ul>
+
+
+											</div>
+
+										</div>
+
+										<div class="howulbox2">
+
+											<ul>
+												<li>
+													<p>지루하고 힘든연산</p>
+													<span class='howtxt'><div></div></span>
+												</li>
+												<li>
+													<p>지루하고 힘든연산</p>
+													<span class='howtxt'><div></div></span>
+												</li>
+
+												<li>
+													<p>비문학 독해DN..</p>
+													<span class='howtxt'><div></div></span>
+												</li>
+
+											</ul>
+
+										</div>
+
+										<span class="howprev"><i class="fas fa-less-than"></i></span>
+
+										<span class="hownext"><i class="fas fa-greater-than"></i></span>
+
+									</div>
+
+								</div>
+
+							</div>
+
+
+						</div>
+
+
+						<!--세번째 섹션 로그인하기-->
+
+						<div id='section3'>
+
+							<a href="#"><img src="img/login_banner.png"></a>
+
+						</div>
+
+
+						<!--네번째 섹션 분야별 추천-->
+
+						<div id='section4'>
+
+							<!--네번째 섹션 추천메뉴-->
+
+							<div id='recmenu'>
+
+								<div id='recmenu_header'>
+
+									<h3>분야별<span>추천</span></h3>
+
+								</div>
+
+								<ul>
+									<li class='recmenu_m'>문학</li>
+									<li class='recmenu_m'>유아/아동</li>
+									<li class='recmenu_m'>경제/실용</li>
+									<li class='recmenu_m'>학습/어학</li>
+									<li class='recmenu_m'>외국도서</li>
+									<li class='recmenu_m'>eBOOK</li>
+									<li class='recmenu_m'>CD/DVD</li>
+
+								</ul>
+
+							</div>
+
+							<!--네번째 섹션 이미지와 텍스트박스-->
+
+							<div id='recwrap'>
+
+								<!----네번째섹션 1. 문학----->
+								<div id='sec4box1'>
+
+									<div class='recmini'>
+
+										<div class='imgbox1'></div>
+
+										<div class='textbox1'></div>
+
+									</div>
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+
+										</div>
+										<div class='textbox1'>
+
+
+											
+										</div>
+
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+											
+										</div>
+										<div class='textbox1'>
+
+											
+											
+										</div>
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+
+										</div>
+										<div class='textbox1'>
+
+											
+										</div>
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+
+										</div>
+										<div class='textbox1'>
+
+										</div>
+
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+
+										</div>
+										<div class='textbox1'>
+
+
+											
+										</div>
+
+									</div>
+
+
+
+									<div class='bannerbox'>
+
+										<div class='minibanner'> 
+											<img src='img/literature_b1.jpg' alt="">
+										</div>
+
+										<div class='minibanner'>
+											<img src='img/literature_b2.jpg' alt="">
+										</div>
+
+									</div>
+
+								</div>
+
+								<!-------------------------네번째섹션 2.유아/아동----->
+								<div id='sec4box2'>
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+											
+										</div>
+
+										<div class='textbox1'>
+
+
+											
+										</div>
+
+									</div>
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+										</div>
+										<div class='textbox1'>
+
+
+											
+										</div>
+
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+
+										</div>
+										<div class='textbox1'>
+
+
+											
+										</div>
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+
+										</div>
+										<div class='textbox1'>
+
+											
+										</div>
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+
+										</div>
+										<div class='textbox1'>
+
+											
+										</div>
+
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+
+										</div>
+										<div class='textbox1'>
+
+											
+											
+										</div>
+
+									</div>
+
+
+
+									<div class='bannerbox'>
+
+										<div class='minibanner'> 
+											<img src='img/baby_b1.jpg' alt="">
+										</div>
+
+										<div class='minibanner'>
+											<img src='img/baby_b2.jpg' alt="">
+										</div>
+
+									</div>
+
+								</div>
+
+								<!------------------------------네번째섹션 3.경제/실용----->
+								<div id='sec4box3'>
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+											
+										</div>
+
+										<div class='textbox1'>
+
+											
+											
+										</div>
+
+									</div>
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+
+										</div>
+										<div class='textbox1'>
+
+											
+										</div>
+
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+
+										</div>
+										<div class='textbox1'>
+
+											
+										</div>
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+
+										</div>
+										<div class='textbox1'>
+
+											
+										</div>
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+
+										</div>
+										<div class='textbox1'>
+
+
+										</div>
+
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+
+										</div>
+										<div class='textbox1'>
+
+											
+											
+										</div>
+
+									</div>
+
+
+
+									<div class='bannerbox'>
+
+										<div class='minibanner'> 
+											<img src='img/economy_b1.jpg' alt="">
+										</div>
+
+										<div class='minibanner'>
+											<img src='img/economy_b2.jpg' alt="">
+										</div>
+
+									</div>
+
+								</div>
+
+								<!--------------------------------네번째섹션 4.학습/어학----->
+								<div id='sec4box4'>
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+
+										</div>
+
+										<div class='textbox1'>
+
+
+											
+										</div>
+
+									</div>
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+
+										</div>
+										<div class='textbox1'>
+
+											
+										</div>
+
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+
+										</div>
+										<div class='textbox1'>
+
+
+											
+										</div>
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+
+										</div>
+										<div class='textbox1'>
+
+											
+											
+										</div>
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+
+										</div>
+										<div class='textbox1'>
+
+
+											
+										</div>
+
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+
+										</div>
+										<div class='textbox1'>
+
+
+										</div>
+
+									</div>
+
+
+
+									<div class='bannerbox'>
+
+										<div class='minibanner'> 
+											<img src='img/literature_b1.jpg' alt="">
+										</div>
+
+										<div class='minibanner'>
+											<img src='img/literature_b2.jpg' alt="">
+										</div>
+
+									</div>
+
+								</div>
+
+								<!---------------------------------네번째섹션 5.외국도서----->
+								<div id='sec4box5'>
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+
+										</div>
+
+										<div class='textbox1'>
+
+											
+											
+										</div>
+
+									</div>
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+
+										</div>
+										<div class='textbox1'>
+
+											
+											
+										</div>
+
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+											
+										</div>
+										<div class='textbox1'>
+
+
+										</div>
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+											
+										</div>
+										<div class='textbox1'>
+
+
+										</div>
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+										</div>
+										<div class='textbox1'>
+
+											
+										</div>
+
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+											
+										</div>
+										<div class='textbox1'>
+
+
+
+											
+										</div>
+
+									</div>
+
+
+
+									<div class='bannerbox'>
+
+										<div class='minibanner'> 
+											<img src='img/baby_b1.jpg' alt="">
+										</div>
+
+										<div class='minibanner'>
+											<img src='img/baby_b2.jpg' alt="">
+										</div>
+
+									</div>
+
+								</div>
+
+								<!--------------------------------------네번째섹션 6.eBook----->
+								<div id='sec4box6'>
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+
+										</div>
+
+										<div class='textbox1'>
+
+
+											
+										</div>
+
+									</div>
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+
+										</div>
+										<div class='textbox1'>
+
+
+											
+										</div>
+
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+
+										</div>
+										<div class='textbox1'>
+
+											
+											
+										</div>
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+											
+										</div>
+										<div class='textbox1'>
+
+											
+											
+										</div>
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+											
+										</div>
+										<div class='textbox1'>
+
+											
+											
+										</div>
+
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+											
+										</div>
+										<div class='textbox1'>
+
+
+											
+										</div>
+
+									</div>
+
+
+
+									<div class='bannerbox'>
+
+										<div class='minibanner'> 
+											<img src='img/ebook_b1.jpg' alt="">
+										</div>
+
+										<div class='minibanner'>
+											<img src='img/ebook_b2.png' alt="">
+										</div>
+
+									</div>
+
+								</div>
+
+								<!---------------------------------------네번째섹션 7. CD/DVD----->
+
+								<div id='sec4box7'>
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+											
+										</div>
+
+										<div class='textbox1'>
+
+											
+											
+										</div>
+
+									</div>
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+											
+										</div>
+										<div class='textbox1'>
+
+											
+										</div>
+
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+											
+										</div>
+										<div class='textbox1'>
+
+											
+											
+										</div>
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+											
+										</div>
+										<div class='textbox1'>
+
+											
+											
+										</div>
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+											
+										</div>
+										<div class='textbox1'>
+
+
+											
+										</div>
+
+									</div>
+
+
+									<div class='recmini'>
+
+										<div class='imgbox1'>
+											
+											
+										</div>
+										<div class='textbox1'>
+
+											
+											
+										</div>
+
+									</div>
+
+
+
+									<div class='bannerbox'>
+
+										<div class='minibanner'> 
+											<img src='img/cd_b1.jpg' alt="">
+										</div>
+
+										<div class='minibanner'>
+											<img src='img/cd_b2.jpg' alt="">
+										</div>
+
+									</div>
+
+								</div>
+
+
+							</div>
+
+
+
+
+						</div>
+
+						<!--섹션5 시작--->
+						<div id='section5'>
+
+							<!--섹션5 주목이달이책--->
+
+							<div id='attention'>
+
+
+
+
+								<div id='atna'>
+
+									<div id='atname1'>
+
+										<h3>주목! 이달 이책</h3>
+										<p>더보기<i class="fas fa-caret-right"></i></p>
+
+
+									</div>
+
+									<div id='atname2'>
+
+										<span class="prev5">&lt;</span>
+										<span class="next5">&gt;</span>
+
+									</div>		
+
+								</div>
+
+								<!--섹션5주목이달이책 이미지랑 텍스트박스창 좌우 길이가 김--->
+
+									<div class='attwrap'>
+
+				<ul>
+
+					<li>
+						<div class='attbook1'>
+							<div class='attimg1'></div>
+							<div class='atttext1'></div>
+						</div>
+
+						<div class='attbook2'>
+							<div class='attimg2'></div>
+							<div class='atttext2'></div>
+						</div>
+						</li>
+
+						<li>
+							<div class='attbook1'>
+								<div class='attimg1'></div>
+								<div class='atttext1'></div>
+							</div>
+
+							<div class='attbook2'>
+								<div class='attimg2'></div>
+								<div class='atttext2'></div>
+							</div>
+						</li>
+
+						<li>
+							<div class='attbook1'>
+								<div class='attimg1'></div>
+								<div class='atttext1'></div>
+							</div>
+
+							<div class='attbook2'>
+								<div class='attimg2'></div>
+								<div class='atttext2'></div>
+							</div>
+						</li>
+
+					</ul>
+
+
+				</div>
+
+
+			</div>
+
+
+
+								<!--섹션5 단독혜택 특가할인 정가인하 어린이전집 섹션--->
+
+								<div id="main5_box2">
+
+									<ul class="salemenu">
+										<li class="sale_on">특가할인</li>
+										<li>정가인하</li>
+									</ul>
+
+									<ul class="kind">
+
+										<li class="sale_on">
+											<ul class="sale_content">
+												<li class="sale1">
+													<div>
+														<div class="sale_imgbox1">
+															<span>
+																<img src="img/icon_discountDown.png" alt="특가할인">
+																<p>특가할인</p>
+																<h3>~30%</h3>
+															</span>
+														</div>
+														<div class="sale_textbox1"></div>
+													</div>
+												</li>
+												<li class="sale1">
+													<div>
+														<div class="sale_imgbox1">
+															<span>
+																<img src="img/icon_discountDown.png" alt="특가할인">
+																<p>특가할인</p>
+																<h3>~30%</h3>
+															</span>
+														</div>
+														<div class="sale_textbox1"></div>
+													</div>
+												</li>
+												<li class="sale1">
+													<div>
+														<div class="sale_imgbox1">
+															<span>
+																<img src="img/icon_discountDown.png" alt="특가할인">
+																<p>특가할인</p>
+																<h3>~30%</h3>
+															</span>
+														</div>
+														<div class="sale_textbox1"></div>
+													</div>
+												</li>
+												<li class="sale1">
+													<div>
+														<div class="sale_imgbox1">
+															<span>
+																<img src="img/icon_discountDown.png" alt="특가할인">
+																<p>특가할인</p>
+																<h3>~30%</h3>
+															</span>
+														</div>
+														<div class="sale_textbox1"></div>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="sale_content">
+												<li class="sale2">
+													<div>
+														<div class="sale_imgbox2">
+															<span>
+																<img src="img/icon_discountDown.png" alt="특가할인">
+																<p>정가인하</p>
+																<h3>~50%</h3>
+															</span>
+														</div>
+														<div class="sale_textbox2"></div>
+													</div>
+												</li>
+												<li class="sale2">
+													<div>
+														<div class="sale_imgbox2">
+															<span>
+																<img src="img/icon_discountDown.png" alt="특가할인">
+																<p>정가인하</p>
+																<h3>~50%</h3>
+															</span>
+														</div>
+														<div class="sale_textbox2"></div>
+													</div>
+												</li>
+												<li class="sale2">
+													<div>
+														<div class="sale_imgbox2">
+															<span>
+																<img src="img/icon_discountDown.png" alt="특가할인">
+																<p>정가인하</p>
+																<h3>~50%</h3>
+															</span>
+														</div>
+														<div class="sale_textbox2"></div>
+													</div>
+												</li>
+												<li class="sale2">
+													<div>
+														<div class="sale_imgbox2">
+															<span>
+																<img src="img/icon_discountDown.png" alt="특가할인">
+																<p>정가인하</p>
+																<h3>~50%</h3>
+															</span>
+														</div>
+														<div class="sale_textbox2"></div>
+													</div>
+												</li>
+											</ul>
+										</li>
+
+									</ul>
+
+								</div>
+
+
+
+								<!--섹션5 중고도서 -->
+
+
+
+
+
+								<div id='album'>
+
+
+									<!-----앨범에서 CD 넣는곳----------------->
+
+									<div class='album_mini'>
+
+										<div class='cd_top'>
+
+											<h3>CD</h3>
+
+											<p>더보기<i class="fas fa-caret-right"></i></p>
+
+										</div>
+
+										<div class='cd_middle'>
+
+											<div class='cd_btn'>
+
+												<span class="cdprev"><i class="fas fa-less-than"></i></span>
+												<span class="cdnext"><i class="fas fa-greater-than"></i></span>
+											</div>
+
+											<ul>
+												<li> 
+													<div class="cd_imgbox1">
+													</div>
+
+													<div class="cd_textbox1">
+
+													</div>
+												</li>
+												<li>
+													<div class="cd_imgbox1">
+
+													</div>
+													<div class="cd_textbox1">
+
+													</div>
+												</li>
+												<li>
+													<div class="cd_imgbox1">
+
+													</div>
+													<div class="cd_textbox1">
+
+													</div>
+												</li>
+
+											</ul>
+										</div>
+										<div class='cd_down'>
+
+											<div class='cd_d_mini'>
+												<img src="img/cd_m1.jpg">
+
+												<h3>앤시티 드림(NCT D...</h3>
+											</div>
+
+											<div class='cd_d_mini'>
+												<img src="img/cd_m2.jpg">
+												<h3>강다니엘 - 1st Full A...</h3>
+											</div>
+
+										</div>
+										<div class='cd_bottom'>
+
+											<img src="img/cd_down1.jpg">
+										</div>
+									</div>
+
+
+									<!-----앨범에서 dvd 넣는곳----------------->
+
+									<div class='album_mini'>
+										<div class='dvd_top'>
+
+											<h3>dvd</h3>
+
+											<p>더보기<i class="fas fa-caret-right"></i></p>
+										</div>
+
+										<div class='dvd_middle'>
+
+											<div class='dvd_btn'>
+
+												<span class="dvdprev"><i class="fas fa-less-than"></i></span>
+												<span class="dvdnext"><i class="fas fa-greater-than"></i></span>
+											</div>
+
+											<ul>
+												<li> 
+													<div class="dvd_imgbox1">
+
+													</div>
+													<div class="dvd_textbox1">
+
+													</div>
+												</li>
+												<li>
+													<div class="dvd_imgbox1">
+
+													</div>
+													<div class="dvd_textbox1">
+
+													</div>
+												</li>
+												<li>
+													<div class="dvd_imgbox1">
+													</div>
+
+													<div class="dvd_textbox1">
+
+													</div>
+												</li>
+
+											</ul>
+										</div>
+										<div class='dvd_down'>
+
+											<div class='dvd_d_mini'>
+												<img src="img/dvd_m1.jpg">
+
+												<h3>스탠리 큐브릭 4필...</h3>
+											</div>
+
+											<div class='dvd_d_mini'>
+												<img src="img/dvd_m2.jpg">
+												<h3>진격의 거인 1기 TV...</h3>
+											</div>
+
+										</div>
+										<div class='dvd_bottom'>
+
+											<img src="img/dvd_down1.jpg">
+										</div>
+									</div>
+
+									<!----------ebook 넣는곳--------------->
+
+									<div class='album_mini'>
+
+
+
+
+										<div class='ebook_top'>
+
+											<h3>e_book</h3>
+
+											<p>더보기<i class="fas fa-caret-right"></i></p>
+
+										</div>
+
+										<div class='ebook_middle'>
+
+
+
+											<div class='ebook_btn'>
+
+												<span class="ebookprev"><i class="fas fa-less-than"></i></span>
+												<span class="ebooknext"><i class="fas fa-greater-than"></i></span>
+											</div>
+
+											<ul>
+												<li> 
+													<div class="ebook_imgbox1">
+
+													</div>
+													<div class="ebook_textbox1">
+
+													</div>
+												</li>
+												<li>
+													<div class="ebook_imgbox1">
+
+													</div>
+													<div class="ebook_textbox1">
+
+													</div>
+												</li>
+												<li>
+													<div class="ebook_imgbox1">
+
+													</div>
+													<div class="ebook_textbox1">
+
+													</div>
+												</li>
+
+											</ul>
+										</div>
+
+										<div class='ebook_bottom'>
+
+											<img src="img/ebook_down1.jpg">
+										</div>
+									</div>
+
+
+
+								</div>
+							</section>
+
+						</div><!----사이드 풀---- 사이드에있는그림-->
+
+					</div><!----풀섹션------>
+
+
+					<!-----------------서비스혜택라인 -->
+
+					<div id='big2'>
+
+						<div id='service'>
+
+							<!-----------------서비스헤더라인 -->
+
+							<div id='service_header'>
+
+								<h3>서비스&혜택</h3>
+
+								<div id='service_header_left'>
+
+									<span>공지사항<i class="fas fa-chevron-circle-right"></i>
+									</span>
+									<p>[안내] 2021년 설 연휴 배송안내</p>
+
+								</div>
+							</div>
+
+							<!-----------------서비스 메뉴들 -->
+
+							<ul class='servbox'>
+
+								<li>
+									<ul class='servmini1'>
+										<li class='serv_head'>알뜰구매 혜택</li>
+										<li>L.POINT 100% 무제한 사용</li>
+										<li>OK캐쉬백포인트 100% 무제한 사용</li>
+										<li>북피니언롯데카드 최대30%청구할인</li>
+										<li>NEW우리V카드10%청구할인</li>
+
+									</ul>
+
+								</li>
+
+								<li>
+									<ul class='servmini2'>
+										<li class='serv_head'>핵심서비스</li>
+										<li><img src="img/point1.jpg" class='rotate'>북디비</li>
+										<li><img src="img/point2.jpg"class='rotate'>B2B 대량주문</li>
+										<li><img src="img/point3.jpg"class='rotate'>대량구매 할인</li>
+										<li><img src="img/point4.jpg"class='rotate'>도서 모바일 App</li>
+
+									</ul>
+								</li>
+								<li>
+									<ul class='servmini3'>
+										<li class='serv_head'>안심배송서비스</li>
+										<li>당일/하루 배송 보장</li>
+										<li>해외주문배송 서비스</li>
+										<li>모든책배송 보장</li>
+										<li>안심번호 서비스</li>
+
+									</ul>
+								</li>
+
+								<li>
+									<ul class='servmini4'>
+										<li class='serv_head'>고객센터</li>
+										<li>
+
+											<ul class="cs">
+												<li>일반 문의</li>
+												<li>중고판매 문의</li>
+												<li>ebook 문의</li>
+											</ul>
+										</li>
+
+										<li class='serv_bottom'>
+											<ul >
+												<li >월~금(09:00~18:00)<br>토요일,일요일,공휴일 휴무</li>
+												<li></li>
+											</ul>
+										</li>
+
+
+									</ul>
+								</li>
+
+								<li>
+									<ul class='servmini5'>
+
+										<div id='parkwrap'>
+											<div id='park'>
+												<h4>BOOK'PARK</h4>
+												<h5>명동 북앤샵</h5>
+											</div>
+
+											<div id='parkimg'>
+												<img src='img/park.png'></div>
+											</div>
+
+											<div id='parkbottom'>
+												<h5>운영시간 10:00~22:00</h5>
+												<p>-설/추석 당일 휴무 (운영상 변동가능)</p>
+												<h5>서울 용산구 한남동 블루스퀘어 2,3층</h5>
+											</div>
+										</div>
+									</ul>
+								</li>
+
+
+							</ul>
+
+						</div>
+
+
+					</div>
+
+
+
+					<footer>
+
+						<div class='footeron'>
+
+							<div class='on1'><h3>3, 5, 8 만원 이상 음반 구매시 더 싸게!
+								<span>음반 할인쿠폰전</span></h3></div>
+								<div class='on2'><h3>친구에게 상품권 선물 FLEX로 포인트 적립까지!
+									<span>상품권 선물하기</span></h3></div>
+
+								</div>
+
+								<div id='footermid'>
+
+									<div id='fmid1'>
+
+										<ul>
+
+											<li class='midfoot'><a href="#">개인정보처리방침</a></li>
+											<li>ㅣ</li>
+											<li><a href="#">청소년보호정책</a></li>
+											<li>ㅣ</li>
+											<li><a href="#">이용약관</a></li>
+											<li>ㅣ</li>
+											<li><a href="#">IR</a></li>
+											<li>ㅣ</li>
+											<li><a href="#">회사소개</a></li>
+											<li>ㅣ</li>
+											<li><a href="#">채용공고</a></li>
+											<li>ㅣ</li>
+											<li><a href="#">우수고객제도</a></li>
+											<li>ㅣ</li>
+											<li><a href="#">수익배분프로그램</a></li>
+											<li>ㅣ</li>
+											<li><a href="#">광고안내</a></li>
+											<li>ㅣ</li>
+											<li><a href="#">담당자안내</a></li>
+											<li>ㅣ</li>
+											<li><a href="#">판매자매니저</a></li>
+											<li></li>
+
+										</ul>
+									</div>
+
+									<div id='fmid2'>
+
+										<div id='fmini1'>
+
+											<h4>주식회사 인터파크</h4>
+
+											<ul>
+												<li>서울특별시 강남구 삼성로 512 삼성동빌딩 10층(삼성동)</li>
+												<li>대표이사 김강세</li>
+												<li>사업자등록번호 824-81-02515 ㅣ 통신판매업신고 2022-서울강남-02179</li>
+
+											</ul>
+
+										</div>
+
+										<div id='fmini2'>
+
+											<h4>고객센터 <img src="img/foot_click.gif"></h4>
+
+											<ul>
+												<li>전화 1577-2555</li>
+												<li>팩스 02-6924-9050</li>
+												<li>개인정보보유기간 : 회원탈퇴시까지</li>
+												<li>개인정보보호책임자 : cpo@interpark.com</li>
+											</ul>
+
+
+
+										</div>
+
+										<div id='fmini3'>
+
+
+											<h4>구매안전 서비스</h4>
+
+											<ul>
+												<li>고객님은 안전거래를 위해 현금으로 5만원 이상 결제시 구매자가 보호를 받을
+												수 있는 구매안전 서비스를(쇼핑몰보증보험) 이용하실수 있습니다.</li>
+												<li><img src="img/foot_click2.gif"></li>
+
+
+											</ul>
+
+										</div>
+
+									</div>
+									<div id='fmid3'>
+
+										<p>인터파크 도서에 등록된 오픈마켓 상품은 그 내용과 책임이 모두 판매자에게 있으며, 인터파크 도서는 해당상품과 내용에 대해 책임지지 않습니다.</p>
+										<span>Copyright ⓒ INTERPARK Corporation All rights reserved.</span>
+
+									</div>
+
+								</div>
+
+							</footer>
+
+
+
+						</body>
+						</html>
